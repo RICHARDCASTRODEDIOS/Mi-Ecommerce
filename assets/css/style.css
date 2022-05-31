@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(145, 143, 143);
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+    gap: 10px;
+    }
+
+
+header{
+    grid-area: header;
+    background-color: rgb(57, 57, 110);
+    text-align: center;
+    width: 100%;
+    }
+    .menu{
+    grid-area: menu;
+    background-color: rgb(145, 143, 143);
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    }
+    .gallery{
+    grid-area: main;
+    /* background-color: #66f; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: solid 1px black; */
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+    }
+
+    .button {
+        border: solid 1px rgb(57, 57, 110);
+        width: 100%;
+        color: aliceblue;
+        background-color: rgb(57, 57, 110);
+        /* padding: 2px; */
+        padding: 10px;
+    }
+
+    .h2 {
+        margin-top: 2px;
+        text-align: center;
+    }
+
+    .precio {
+        /* margin-top: 0; */
+        text-align: center;
+        color: rgb(82, 69, 69);
+    }
+
+    .span {
+        color: rgb(82, 69, 69);
+    }
+
+     
+    footer{
+    grid-area: footer;
+    background-color: rgb(57, 57, 110);
+    color: aliceblue;
+    text-align: center;
+    }
+
